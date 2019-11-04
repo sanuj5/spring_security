@@ -1,0 +1,37 @@
+server:
+  port: 8080
+#  servlet:
+#    session:
+#      cookie:
+#        name: CHUCHU
+#spring:
+#  thymeleaf:
+#    cache: false
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          custom-client:
+#            client-id: user
+#            client-secret: password
+#            client-name: Auth Server
+#            scope: read
+#            provider: custom-provider
+#            redirect-uri: http://localhost:8080/login/oauth2/code/
+#            client-authentication-method: basic
+#            authorization-grant-type: authorization_code
+#        provider:
+#          custom-provider:
+#            token-uri: http://localhost:9000/oauth/token
+#            authorization-uri: http://localhost:9000/oauth/authorize
+#            user-info-uri: http://localhost:9000/user
+#            user-name-attribute: name
+logging:
+  level:
+    root: DEBUG
+
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:9000/user
